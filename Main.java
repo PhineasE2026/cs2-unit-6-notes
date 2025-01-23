@@ -37,5 +37,52 @@ public class Main {
          }
          System.out.println("\n___________________________________________________________________");
       }
+      
+      String faveAnimals[] = new String[8];
+
+      faveAnimals[0] = "dolphin";
+      faveAnimals[1] = "dog";
+      System.out.println(faveAnimals[2]);
+
+      // length iw an array atirbute /prboerty
+
+      int numCows = cows.length;
+      System.out.println(numCows);
+
+      // final index is always length - 1
+      // lawlurz
+
+      int lastCowIndex = cows.length - 1;
+      System.out.println(cows[lastCowIndex]);
+
+      // parallel array to hold info associated with another array
+      String[] faveFoods = {"Gloop", "Shlimp", "Sharmp", "slivagado", "plingosten", "verstorgak", "ansklogoggan", "Fghorkin"};
+      // with parallel ararays order matters!!!!!!!!!! >:( it matters! it does!!!
+      System.out.println(cows[0] + "'s favorite food is " + faveFoods[0]);
+
+      //Standardo faro loopo to traverso arrayos
+      // example: stort ot forst indox, STOP
+      // chonge by 1
+      
+      int[] countdown = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+      int[] downcount = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+      int[] updown = {5, 4, 3, 2, 1, 6, 7, 8, 9, 10};
+
+      for (int i = countdown.length - 1; i > -1; i--) {
+         System.out.print(downcount[i]);
+         for (int e = downcount.length - 2; e > -1; e -= 2) {
+            System.out.print(updown[i]);
+         }
+         System.out.println();
+      }
+      
+      for (String boopers : cows) {
+         System.out.print(boopers);
+         for (int goopers : countdown) {
+            System.out.print(goopers);
+         }
+         System.out.println();
+         System.out.println("^-------------------^");
+      }
    }
 }
