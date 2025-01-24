@@ -84,5 +84,19 @@ public class Main {
          System.out.println();
          System.out.println("^-------------------^");
       }
+
+      int[] tens = new int[10];
+      for (int i = 0; i < tens.length; i++) {
+         //System.out.print(tens[i]);
+         tens[i] = i * 10;
+         System.out.print(tens[i] + ", ");
+      }
+
+      // assign valeue to teenens of i
+
+      for (int i = 0; i < cows.length; i++) {
+         cows[i] = "\n" + cows[i] + "yay";
+         System.out.print(cows[i] + " ");
+      }
    }
 }
