@@ -98,5 +98,21 @@ public class Main {
          cows[i] = "\n" + cows[i] + "yay";
          System.out.print(cows[i] + " ");
       }
+
+      //enhanced foreach loops
+      //shortcute to iterate through each item of an array
+      //here is an examplele
+      System.out.println();
+      for (int v : luckyNums) {
+         System.out.println("The next index is: " + v);
+      }
+      for (String g : cows) {
+         // g represents current cow
+         System.out.println("the " + g + " and the " + g + " dododontdontdont " + g);
+      }
+
+      // LLIMITAITOSJSNSSNSNS
+      //cannot MODIFY the VALIUES when USING the FOR EACH. because WE dont KEEP track of the INDEX
+      // for each loop is barely good for anything, it sucks. you can only use it to loop through every specific value of an array. so dumb. standard fpor loops are much better and much more versatile. ge
    }
 }
